@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Creating Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header class="header">
+        <nav>
+            <ul id="list">
+                <li><a href="#">Project</a></li>
+                <li><a href="#">About</a></li>
+                <li><button onclick="downloadResume( )">Resume</button></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section class="intro">
+            <h1>VENKATA SAI KALYAN</h1>
+            <h2>Full Stack Developer</h2>
+            <p>I'm a full stack web developer with a passion for creating user-friendly and efficient web applications.
+            </p>
+        </section>
+        <section id="projects">
+            <h1>PROJECTS</h1>
+            <div class="project">
+                <a href="youtube-summarizer.html">
+                    <h3 id="project-title"></h3>
+                    <img src="YouTube Summarizer.jpg" alt="youtube-summarizer" id="project-image">
+                </a>
+                <p>The YouTube Video Summarizer project aims to develop a tool that extracts the main points from a
+                    YouTube video's transcript and presents a brief summary. This involves utilizing natural language
+                    processing (NLP) techniques and possibly machine learning algorithms to understand and condense the
+                    video's content effectively.</p>
+            </div>
+            <!-- <div class="project">
+                <img src="YouTube Summarizer.jpg" alt="The ">
+                <h3 id="project-title">YouTube Summarizer</h3>
+                <p>A web application that summarizes YouTube videos using AI.</p>
+            </div> -->
+        </section>
+    </main>
+</body>
+<script src="portfolio.js"></script>
+
+</html>
