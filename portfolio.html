@@ -20,21 +20,22 @@
         </nav>
     </header>
     <main>
+        <!-- A little about my self -->
         <section class="intro">
             <h1>VENKATA SAI KALYAN</h1>
             <h2>Full Stack Developer</h2>
-            <!-- <p>I'm a full stack web developer with a passion for creating user-friendly and efficient web applications. -->
-            <!-- </p> -->
             <p>I am an Application Development Associate specializing in developing high-quality products and reusable
                 code, with expertise in Python, JavaScript, and Django. My technical skills include web development with
                 HTML5, CSS3, and Bootstrap, as well as proficiency in development tools like Visual Studio and GitHub.
             </p>
         </section>
+        <!-- Explained about my first project-1 -->
         <section id="Projects">
             <h1>PROJECTS</h1>
             <div class="project">
                 <a href="youtube-summarizer.html">
                     <h3 id="project-title"></h3>
+                    <!-- The image is hyperlinked to the youtube-summarizer.html file -->
                     <img src="YouTube Summarizer.jpg" alt="youtube-summarizer" id="project-image">
                 </a>
                 <p>The YouTube Video Summarizer project aims to develop a tool that extracts the main points from a
@@ -49,6 +50,7 @@
         <h1>About</h1>
         <p>I am a full stack web developer with a passion for creating user-friendly and efficient web applications.</p>
     </section>
+    <!-- This section has complete details about me and my social media accounts -->
     <footer>
         <div class="icons">
             <!-- Instagram Link -->
@@ -63,6 +65,15 @@
             <a href="https://github.com/venkat9573-avs" target="_blank" class="github-link">
                 <i class="fa-brands fa-github"></i>
             </a>
+            <!-- The Contact Me button is used to show the contact card -->
+            <button onclick="showContactCard()">Contact Me</button>
+            <!-- The contact card is hidden by default -->
+            <div id="contact-card" style="display: none;">
+                <h2>Contact Information</h2>
+                <p>Email: venkatsaik91@gmail.com</p>
+                <p>LinkedIn: <a href="https://www.linkedin.com/in/venkata-sai-kalyan-15a71a186/" target="_blank">Venkata
+                        Sai Kalyan</a></p>
+            </div>
         </div>
         <p>© 2024 Venkata Sai Kalyan. All rights reserved.</p>
     </footer>

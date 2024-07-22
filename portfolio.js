@@ -6,3 +6,6 @@ function downloadResume( ){
     link.click();
     document.body.removeChild(link);
 }
+function showContactCard(){
+    document.getElementById('contact-card').style.display = 'grid';
+}
