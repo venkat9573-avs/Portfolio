@@ -10,74 +10,87 @@
 </head>
 
 <body>
+    <!-- Header Section -->
     <header class="header">
         <nav>
             <ul id="list">
                 <li><a href="#Projects">Projects</a></li>
                 <li><a href="#About">About</a></li>
-                <li><button onclick="downloadResume( )">Resume</button></li>
+                <li><button onclick="downloadResume()">Resume</button></li>
             </ul>
         </nav>
     </header>
+
+    <!-- Main Content -->
     <main>
-        <!-- A little about my self -->
+        <!-- Intro Section -->
         <section class="intro">
-            <h1>VENKATA SAI KALYAN</h1>
+            <h1>VENKATA SAI KALYAN. AMBITI</h1>
             <h2>Full Stack Developer</h2>
-            <p>I am an Application Development Associate specializing in developing high-quality products and reusable
-                code, with expertise in Python, JavaScript, and Django. My technical skills include web development with
-                HTML5, CSS3, and Bootstrap, as well as proficiency in development tools like Visual Studio and GitHub.
+            <p>
+                I am an Application Development Associate specializing in high-quality products and reusable code, 
+                with expertise in Python, JavaScript, and Django. My skills include web development with HTML5, 
+                CSS3, and Bootstrap, along with tools like Visual Studio and GitHub.
             </p>
         </section>
-        <!-- Explained about my first project-1 -->
+
+        <!-- Projects Section -->
         <section id="Projects">
             <h1>PROJECTS</h1>
             <div class="project">
                 <a href="youtube-summarizer.html">
-                    <h3 id="project-title"></h3>
-                    <!-- The image is hyperlinked to the youtube-summarizer.html file -->
-                    <img src="YouTube Summarizer.jpg" alt="youtube-summarizer" id="project-image">
+                    <h3 id="project-title">YouTube Summarizer</h3>
+                    <img src="YouTube Summarizer.jpg" alt="YouTube Summarizer" id="project-image">
                 </a>
-                <p>The YouTube Video Summarizer project aims to develop a tool that extracts the main points from a
-                    YouTube video's transcript and presents a brief summary. This involves utilizing natural language
-                    processing (NLP) techniques and possibly machine learning algorithms to understand and condense the
-                    video's content effectively.</p>
+                <p>
+                    This project uses natural language processing (NLP) to summarize YouTube video transcripts, 
+                    providing concise overviews with machine learning techniques.
+                </p>
             </div>
+        </section>
 
+        <!-- Volunteer Experience Section -->
+        <section id="About">
+            <h1>Volunteering</h1>
+            <div class="project">
+                <h3 id="project-title">MARG Initiative</h3>
+                <p>
+                    Volunteered with ERA Foundation's MARG program to guide children on opportunities available after SSC.
+                </p>
+            </div>
+        </section>
+
+        <!-- About Section -->
+        <section id="About">
+            <h1>About</h1>
+            <p>I am a full-stack web developer passionate about creating user-friendly and efficient web applications.</p>
         </section>
     </main>
-    <section id="About">
-        <h1>About</h1>
-        <p>I am a full stack web developer with a passion for creating user-friendly and efficient web applications.</p>
-    </section>
-    <!-- This section has complete details about me and my social media accounts -->
+
+    <!-- Footer Section -->
     <footer>
         <div class="icons">
-            <!-- Instagram Link -->
             <a href="https://www.instagram.com/venk_t_03_06/" target="_blank" class="instagram-link">
                 <i class="fab fa-instagram"></i>
             </a>
-            <!-- Linkedin Link -->
-            <!-- <i class="fa-brands fa-instagram"></i> -->
             <a href="https://www.linkedin.com/in/venkata-sai-kalyan-15a71a186/" target="_blank" class="linkedin-link">
                 <i class="fa-brands fa-linkedin"></i>
             </a>
             <a href="https://github.com/venkat9573-avs" target="_blank" class="github-link">
                 <i class="fa-brands fa-github"></i>
             </a>
-            <!-- The Contact Me button is used to show the contact card -->
-            <button onclick="showContactCard()">Contact Me</button>
-            <!-- The contact card is hidden by default -->
-            <div id="contact-card" style="display: none;">
+            <button id="contact-button" onclick="toggleContactCard()">Contact Me</button>
+                <div id="contact-card" style="display: none;">
                 <h2>Contact Information</h2>
-                <p>Email: venkatsaik91@gmail.com</p>
-                <p>LinkedIn: <a href="https://www.linkedin.com/in/venkata-sai-kalyan-15a71a186/" target="_blank">Venkata
-                        Sai Kalyan</a></p>
+                <p>Email: venkstavs9573@gmail.com</p>
+            <button onclick="toggleContactCard()">Close</button>
             </div>
+
         </div>
         <p>© 2024 Venkata Sai Kalyan. All rights reserved.</p>
     </footer>
+
+    <script src="portfolio.js"></script>
 </body>
-<script src="portfolio.js"></script>
 
 </html>
