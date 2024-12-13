@@ -5,6 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Creating Portfolio</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
     <link rel="stylesheet" href="style.css">
 </head>
@@ -28,8 +29,8 @@
             <h1>VENKATA SAI KALYAN. AMBITI</h1>
             <h2>Full Stack Developer</h2>
             <p>
-                I am an Application Development Associate specializing in high-quality products and reusable code, 
-                with expertise in Python, JavaScript, and Django. My skills include web development with HTML5, 
+                I am an Application Development Associate specializing in high-quality products and reusable code,
+                with expertise in Python, JavaScript, and Django. My skills include web development with HTML5,
                 CSS3, and Bootstrap, along with tools like Visual Studio and GitHub.
             </p>
         </section>
@@ -43,52 +44,63 @@
                     <img src="YouTube Summarizer.jpg" alt="YouTube Summarizer" id="project-image">
                 </a>
                 <p>
-                    This project uses natural language processing (NLP) to summarize YouTube video transcripts, 
+                    This project uses natural language processing (NLP) to summarize YouTube video transcripts,
                     providing concise overviews with machine learning techniques.
                 </p>
             </div>
         </section>
+        <!-- 2nd Project Starts Here -->
+        <Section id="Projects">
 
-        <!-- Volunteer Experience Section -->
-        <section id="About">
-            <h1>Volunteering</h1>
-            <div class="project">
-                <h3 id="project-title">MARG Initiative</h3>
+        </Section>
+        <!-- Volunteer Section -->
+        <section id="Volunteership">
+            <h1>Volunteership</h1>
+            <div class="volunteer-project">
+                <a href="volnteership.html">
+                    <h3 class="volunteer-title">MARG initiative</h3>
+                    <img src="Image-1" alt="Volunteer-img" class="volunteer-image">
+                </a>
                 <p>
-                    Volunteered with ERA Foundation's MARG program to guide children on opportunities available after SSC.
+                    Volunteered with ERA Foundation's MARG program to guide children on opportunities available after
+                    SSC.
                 </p>
             </div>
         </section>
-
         <!-- About Section -->
         <section id="About">
             <h1>About</h1>
-            <p>I am a full-stack web developer passionate about creating user-friendly and efficient web applications.</p>
+            <p>I am a full-stack web developer passionate about creating user-friendly and efficient web applications.
+            </p>
         </section>
     </main>
 
     <!-- Footer Section -->
     <footer>
         <div class="icons">
-            <a href="https://www.instagram.com/venk_t_03_06/" target="_blank" class="instagram-link">
-                <i class="fab fa-instagram"></i>
-            </a>
-            <a href="https://www.linkedin.com/in/venkata-sai-kalyan-15a71a186/" target="_blank" class="linkedin-link">
-                <i class="fa-brands fa-linkedin"></i>
-            </a>
-            <a href="https://github.com/venkat9573-avs" target="_blank" class="github-link">
-                <i class="fa-brands fa-github"></i>
-            </a>
-            <button id="contact-button" onclick="toggleContactCard()">Contact Me</button>
-                <div id="contact-card" style="display: none;">
+            <button id="contact-button" onclick="toggleContactCard()">
+                Contact Me
+            </button>
+            <div id="social-icons" style="display: flex;"> <!-- Ensure icons are visible initially -->
+                <a href="https://www.instagram.com/venk_t_03_06/" target="_blank">
+                    <i class="fab fa-instagram"></i>
+                </a>
+                <a href="https://www.linkedin.com/in/yourprofile" target="_blank">
+                    <i class="fab fa-linkedin"></i>
+                </a>
+                <a href="https://github.com/venkat9573-avs" target="_blank">
+                    <i class="fab fa-github"></i>
+                </a>
+            </div>
+            <div id="contact-card" style="display: none;">
                 <h2>Contact Information</h2>
                 <p>Email: venkstavs9573@gmail.com</p>
-            <button onclick="toggleContactCard()">Close</button>
+                <button onclick="toggleContactCard()">Close</button>
             </div>
-
         </div>
         <p>© 2024 Venkata Sai Kalyan. All rights reserved.</p>
     </footer>
+
 
     <script src="portfolio.js"></script>
 </body>
